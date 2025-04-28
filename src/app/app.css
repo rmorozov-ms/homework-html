@@ -1,0 +1,54 @@
+#root {
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: content;
+    justify-content: space-between;
+    padding: 10px 10px 20px 10px;
+    width: 80%;
+}
+
+.logo {
+    align-self: center;
+    width: 155.61px;
+    height: 23.18px;
+}
+
+.button {
+    align-self: center;
+    width: 102px;
+    height: 34px;
+    padding: 2px 3px 2px 3px;
+}
+
+.table {
+    flex-grow: 1;
+    width: 80%;
+}
+
+.footer {
+    flex-basis: content;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.amount,
+.name {
+    font-weight: 700;
+    color: black;
+}
