@@ -39,11 +39,6 @@
     padding: 2px 3px 2px 3px;
 }
 
-.table {
-    flex-grow: 1;
-    width: 80%;
-}
-
 .footer {
     flex-basis: content;
     font-family: Inter;
@@ -51,10 +46,4 @@
     font-size: 12px;
     line-height: 150%;
     letter-spacing: 0%;
-}
-
-.amount,
-.name {
-    font-weight: 700;
-    color: black;
 }
