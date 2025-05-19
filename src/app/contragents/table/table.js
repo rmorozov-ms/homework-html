@@ -1,6 +1,6 @@
-import html from "./table.html"
 import './table.css';
-import { getItems, removeItem } from "./datarows";
+import html from "./table.html"
+import { setItem, getItems, removeItem } from "../datasource/data";
 
 const element = document.createElement('div')
 element.innerHTML = html;
@@ -79,6 +79,11 @@ function getRemoveButton(row) {
             }
         );
     return removeButton;
+}
+
+export function saveItem(newItem) {
+    setItem(newItem);
+    reFillTableBody();
 }
 
 function removeRow(row) {

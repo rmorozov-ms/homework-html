@@ -1,7 +1,7 @@
+import './modal.css';
 import modalHtml from "./modal.html"
 import modalToggleHtml from "./modalToggle.html"
-import './modal.css';
-import ContrAgent from "../contragents/contragent";
+import ContrAgent from "../datasource/contragent";
 
 const modalToggleElement = document.createElement('div')
 modalToggleElement.innerHTML = modalToggleHtml;

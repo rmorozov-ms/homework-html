@@ -1,21 +1,14 @@
-import html from "./app.html";
 import './app.css'
-import { getFilledTable, reFillTableBody } from "./contragents/table.js"
-import { openModal, getModalToggle, getModal } from "./modal/modal.js"
-import { setItem } from "./contragents/datarows";
-
-function saveFunc(newItem) {
-    setItem(newItem);
-    //т.к. содержимое массива с данными изменилось- перерисуем содержимое таблицы
-    reFillTableBody();
-}
+import html from "./app.html";
+import { getFilledTable, saveItem } from "./contragents/table/table.js"
+import { openModal, getModalToggle, getModal } from "./contragents/modal/modal.js"
 
 const rootElement = document.getElementById('root');
 rootElement.innerHTML = html;
 
 const modalToggle = getModalToggle();
 rootElement.querySelector("#modal_toggle").appendChild(modalToggle);
-const modal = getModal(saveFunc);
+const modal = getModal(saveItem);
 rootElement.querySelector("#main_modal").appendChild(modal);
 
 const table = getFilledTable(openModal);
